@@ -1,0 +1,883 @@
+c:\anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+[04/21/19 21:09:15] INFO	********************************************************************************
+[04/21/19 21:09:15] INFO	AlphaPy Start
+[04/21/19 21:09:15] INFO	********************************************************************************
+[04/21/19 21:09:15] INFO	Model Configuration
+[04/21/19 21:09:15] INFO	No Treatments Found
+[04/21/19 21:09:15] INFO	MODEL PARAMETERS:
+[04/21/19 21:09:15] INFO	algorithms        = ['LGBM']
+[04/21/19 21:09:15] INFO	calibration       = False
+[04/21/19 21:09:15] INFO	cal_type          = sigmoid
+[04/21/19 21:09:15] INFO	calibration_plot  = False
+[04/21/19 21:09:15] INFO	clustering        = True
+[04/21/19 21:09:15] INFO	cluster_inc       = 3
+[04/21/19 21:09:15] INFO	cluster_max       = 30
+[04/21/19 21:09:15] INFO	cluster_min       = 3
+[04/21/19 21:09:15] INFO	confusion_matrix  = True
+[04/21/19 21:09:15] INFO	counts            = True
+[04/21/19 21:09:15] INFO	cv_folds          = 3
+[04/21/19 21:09:15] INFO	directory         = .
+[04/21/19 21:09:15] INFO	extension         = csv
+[04/21/19 21:09:15] INFO	drop              = []
+[04/21/19 21:09:15] INFO	encoder           = <Encoders.factorize: 3>
+[04/21/19 21:09:15] INFO	esr               = 20
+[04/21/19 21:09:15] INFO	factors           = []
+[04/21/19 21:09:15] INFO	features [X]      = *
+[04/21/19 21:09:15] INFO	feature_selection = False
+[04/21/19 21:09:15] INFO	fs_percentage     = 50
+[04/21/19 21:09:15] INFO	fs_score_func     = <function f_classif at 0x0000000016A8E6A8>
+[04/21/19 21:09:15] INFO	fs_uni_grid       = [5, 10, 15, 20, 25]
+[04/21/19 21:09:15] INFO	grid_search       = True
+[04/21/19 21:09:15] INFO	gs_iters          = 50
+[04/21/19 21:09:15] INFO	gs_random         = True
+[04/21/19 21:09:15] INFO	gs_sample         = False
+[04/21/19 21:09:15] INFO	gs_sample_pct     = 0.200000
+[04/21/19 21:09:15] INFO	importances       = True
+[04/21/19 21:09:15] INFO	interactions      = False
+[04/21/19 21:09:15] INFO	isomap            = False
+[04/21/19 21:09:15] INFO	iso_components    = 2
+[04/21/19 21:09:15] INFO	iso_neighbors     = 5
+[04/21/19 21:09:15] INFO	isample_pct       = 10
+[04/21/19 21:09:15] INFO	learning_curve    = True
+[04/21/19 21:09:15] INFO	logtransform      = False
+[04/21/19 21:09:15] INFO	lv_remove         = True
+[04/21/19 21:09:15] INFO	lv_threshold      = 0.100000
+[04/21/19 21:09:15] INFO	model_type        = <ModelType.classification: 1>
+[04/21/19 21:09:15] INFO	n_estimators      = 51
+[04/21/19 21:09:15] INFO	n_jobs            = 3
+[04/21/19 21:09:15] INFO	ngrams_max        = 3
+[04/21/19 21:09:15] INFO	numpy             = True
+[04/21/19 21:09:15] INFO	pca               = False
+[04/21/19 21:09:15] INFO	pca_inc           = 1
+[04/21/19 21:09:15] INFO	pca_max           = 10
+[04/21/19 21:09:15] INFO	pca_min           = 2
+[04/21/19 21:09:15] INFO	pca_whiten        = False
+[04/21/19 21:09:15] INFO	poly_degree       = 2
+[04/21/19 21:09:15] INFO	pvalue_level      = 0.010000
+[04/21/19 21:09:15] INFO	rfe               = False
+[04/21/19 21:09:15] INFO	rfe_step          = 50
+[04/21/19 21:09:15] INFO	roc_curve         = True
+[04/21/19 21:09:15] INFO	rounding          = 2
+[04/21/19 21:09:15] INFO	sampling          = False
+[04/21/19 21:09:15] INFO	sampling_method   = <SamplingMethod.under_random: 12>
+[04/21/19 21:09:15] INFO	sampling_ratio    = 0.500000
+[04/21/19 21:09:15] INFO	scaler_option     = True
+[04/21/19 21:09:15] INFO	scaler_type       = <Scalers.standard: 2>
+[04/21/19 21:09:15] INFO	scipy             = False
+[04/21/19 21:09:15] INFO	scorer            = roc_auc
+[04/21/19 21:09:15] INFO	seed              = 42
+[04/21/19 21:09:15] INFO	sentinel          = -1
+[04/21/19 21:09:15] INFO	separator         = ,
+[04/21/19 21:09:15] INFO	shuffle           = False
+[04/21/19 21:09:15] INFO	split             = 0.400000
+[04/21/19 21:09:15] INFO	submission_file   = sample_submission
+[04/21/19 21:09:15] INFO	submit_probas     = True
+[04/21/19 21:09:15] INFO	target [y]        = radiant_win
+[04/21/19 21:09:15] INFO	target_value      = 1
+[04/21/19 21:09:15] INFO	treatments        = None
+[04/21/19 21:09:15] INFO	tsne              = False
+[04/21/19 21:09:15] INFO	tsne_components   = 2
+[04/21/19 21:09:15] INFO	tsne_learn_rate   = 1000.000000
+[04/21/19 21:09:15] INFO	tsne_perplexity   = 30.000000
+[04/21/19 21:09:15] INFO	vectorize         = False
+[04/21/19 21:09:15] INFO	verbosity         = 1
+[04/21/19 21:09:15] INFO	Creating directory ./model
+[04/21/19 21:09:15] INFO	Creating directory ./output
+[04/21/19 21:09:15] INFO	Creating directory ./plots
+[04/21/19 21:09:15] INFO	Creating Model
+[04/21/19 21:09:15] INFO	Calling Pipeline
+[04/21/19 21:09:15] INFO	Training Pipeline
+[04/21/19 21:09:15] INFO	Loading Data
+[04/21/19 21:09:15] INFO	Loading data from ./input/train.csv
+[04/21/19 21:09:19] INFO	Found target radiant_win in data frame
+[04/21/19 21:09:19] INFO	Labels (y) found for Partition.train
+[04/21/19 21:09:19] INFO	Loading Data
+[04/21/19 21:09:19] INFO	Loading data from ./input/test.csv
+[04/21/19 21:09:20] INFO	Target radiant_win not found in Partition.test
+[04/21/19 21:09:20] INFO	Saving New Features in Model
+[04/21/19 21:09:20] INFO	Original Feature Statistics
+[04/21/19 21:09:20] INFO	Number of Training Rows    : 39675
+[04/21/19 21:09:20] INFO	Number of Training Columns : 566
+[04/21/19 21:09:20] INFO	Unique Training Values for radiant_win : [0 1]
+[04/21/19 21:09:20] INFO	Unique Training Counts for radiant_win : [18849 20826]
+[04/21/19 21:09:20] INFO	Number of Testing Rows     : 10000
+[04/21/19 21:09:20] INFO	Number of Testing Columns  : 566
+[04/21/19 21:09:20] INFO	Original Features : Index(['game_time', 'game_mode', 'lobby_type', 'objectives_len', 'chat_len',
+       'r1_hero_id', 'r1_kills', 'r1_deaths', 'r1_assists', 'r1_denies',
+       ...
+       'mean_damage_dealt_ratio', 'r_total_damage_received',
+       'd_total_damage_received', 'total_damage_received_ratio',
+       'r_std_damage_received', 'd_std_damage_received',
+       'std_damage_received_ratio', 'r_mean_damage_received',
+       'd_mean_damage_received', 'mean_damage_received_ratio'],
+      dtype='object', length=566)
+[04/21/19 21:09:20] INFO	Feature Count     : 566
+[04/21/19 21:09:20] INFO	Applying Treatments
+[04/21/19 21:09:20] INFO	No Treatments Specified
+[04/21/19 21:09:20] INFO	New Feature Count : 566
+[04/21/19 21:09:20] INFO	Dropping Features: []
+[04/21/19 21:09:20] INFO	Original Feature Count : 566
+[04/21/19 21:09:21] INFO	Reduced Feature Count  : 566
+[04/21/19 21:09:22] INFO	Writing data frame to ./input/train_20190421.csv
+[04/21/19 21:09:50] INFO	Writing data frame to ./input/test_20190421.csv
+[04/21/19 21:09:57] INFO	Creating Cross-Tabulations
+[04/21/19 21:09:57] INFO	Original Features : Index(['game_time', 'game_mode', 'lobby_type', 'objectives_len', 'chat_len',
+       'r1_hero_id', 'r1_kills', 'r1_deaths', 'r1_assists', 'r1_denies',
+       ...
+       'mean_damage_dealt_ratio', 'r_total_damage_received',
+       'd_total_damage_received', 'total_damage_received_ratio',
+       'r_std_damage_received', 'd_std_damage_received',
+       'std_damage_received_ratio', 'r_mean_damage_received',
+       'd_mean_damage_received', 'mean_damage_received_ratio'],
+      dtype='object', length=566)
+[04/21/19 21:09:57] INFO	Feature Count     : 566
+[04/21/19 21:09:57] INFO	Creating Count Features
+[04/21/19 21:09:57] INFO	NA Counts
+[04/21/19 21:09:58] INFO	Number Counts
+[04/21/19 21:10:04] INFO	New Feature Count : 577
+[04/21/19 21:10:04] INFO	Creating Base Features
+[04/21/19 21:10:04] INFO	Feature 1: game_time is a numerical feature of type int64 with 3516 unique values
+[04/21/19 21:10:04] INFO	Feature 2: game_mode is a numerical feature of type int64 with 8 unique values
+[04/21/19 21:10:04] INFO	Feature 3: lobby_type is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:04] INFO	Feature 4: objectives_len is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:10:04] INFO	Feature 5: chat_len is a numerical feature of type int64 with 168 unique values
+[04/21/19 21:10:04] INFO	Feature 6: r1_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:04] INFO	Feature 7: r1_kills is a numerical feature of type int64 with 33 unique values
+[04/21/19 21:10:04] INFO	Feature 8: r1_deaths is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:04] INFO	Feature 9: r1_assists is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:10:04] INFO	Feature 10: r1_denies is a numerical feature of type int64 with 73 unique values
+[04/21/19 21:10:04] INFO	Feature 11: r1_gold is a numerical feature of type int64 with 17923 unique values
+[04/21/19 21:10:06] INFO	Feature 12: r1_lh is a numerical feature of type int64 with 529 unique values
+[04/21/19 21:10:06] INFO	Feature 13: r1_xp is a numerical feature of type int64 with 19108 unique values
+[04/21/19 21:10:08] INFO	Feature 14: r1_health is a numerical feature of type int64 with 2923 unique values
+[04/21/19 21:10:08] INFO	Feature 15: r1_max_health is a numerical feature of type int64 with 748 unique values
+[04/21/19 21:10:08] INFO	Feature 16: r1_max_mana is a numerical feature of type float64 with 1465 unique values
+[04/21/19 21:10:08] INFO	Feature 17: r1_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:08] INFO	Feature 18: r1_x is a numerical feature of type int64 with 62 unique values
+[04/21/19 21:10:08] INFO	Feature 19: r1_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:08] INFO	Feature 20: r1_stuns is a numerical feature of type float64 with 10995 unique values
+[04/21/19 21:10:08] INFO	Feature 21: r1_creeps_stacked is a numerical feature of type int64 with 53 unique values
+[04/21/19 21:10:08] INFO	Feature 22: r1_camps_stacked is a numerical feature of type int64 with 15 unique values
+[04/21/19 21:10:08] INFO	Feature 23: r1_rune_pickups is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:10:08] INFO	Feature 24: r1_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:08] INFO	Feature 25: r1_teamfight_participation is a numerical feature of type float64 with 657 unique values
+[04/21/19 21:10:08] INFO	Feature 26: r1_towers_killed is a numerical feature of type int64 with 10 unique values
+[04/21/19 21:10:08] INFO	Feature 27: r1_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:10:08] INFO	Feature 28: r1_obs_placed is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:08] INFO	Feature 29: r1_sen_placed is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:10:08] INFO	Feature 30: r1_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:08] INFO	Feature 31: r1_max_hero_hit is a numerical feature of type int64 with 1248 unique values
+[04/21/19 21:10:08] INFO	Feature 32: r1_purchase_count is a numerical feature of type int64 with 137 unique values
+[04/21/19 21:10:08] INFO	Feature 33: r1_count_ability_use is a numerical feature of type int64 with 959 unique values
+[04/21/19 21:10:08] INFO	Feature 34: r1_damage_dealt is a numerical feature of type int64 with 35958 unique values
+[04/21/19 21:10:12] INFO	Feature 35: r1_damage_received is a numerical feature of type int64 with 21735 unique values
+[04/21/19 21:10:14] INFO	Feature 36: r2_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:14] INFO	Feature 37: r2_kills is a numerical feature of type int64 with 35 unique values
+[04/21/19 21:10:14] INFO	Feature 38: r2_deaths is a numerical feature of type int64 with 29 unique values
+[04/21/19 21:10:14] INFO	Feature 39: r2_assists is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:10:14] INFO	Feature 40: r2_denies is a numerical feature of type int64 with 70 unique values
+[04/21/19 21:10:14] INFO	Feature 41: r2_gold is a numerical feature of type int64 with 17797 unique values
+[04/21/19 21:10:15] INFO	Feature 42: r2_lh is a numerical feature of type int64 with 516 unique values
+[04/21/19 21:10:16] INFO	Feature 43: r2_xp is a numerical feature of type int64 with 18909 unique values
+[04/21/19 21:10:17] INFO	Feature 44: r2_health is a numerical feature of type int64 with 2912 unique values
+[04/21/19 21:10:18] INFO	Feature 45: r2_max_health is a numerical feature of type int64 with 738 unique values
+[04/21/19 21:10:18] INFO	Feature 46: r2_max_mana is a numerical feature of type float64 with 1424 unique values
+[04/21/19 21:10:18] INFO	Feature 47: r2_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:18] INFO	Feature 48: r2_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:10:18] INFO	Feature 49: r2_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:18] INFO	Feature 50: r2_stuns is a numerical feature of type float64 with 11168 unique values
+[04/21/19 21:10:18] INFO	Feature 51: r2_creeps_stacked is a numerical feature of type int64 with 53 unique values
+[04/21/19 21:10:18] INFO	Feature 52: r2_camps_stacked is a numerical feature of type int64 with 15 unique values
+[04/21/19 21:10:18] INFO	Feature 53: r2_rune_pickups is a numerical feature of type int64 with 40 unique values
+[04/21/19 21:10:18] INFO	Feature 54: r2_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:18] INFO	Feature 55: r2_teamfight_participation is a numerical feature of type float64 with 657 unique values
+[04/21/19 21:10:18] INFO	Feature 56: r2_towers_killed is a numerical feature of type int64 with 10 unique values
+[04/21/19 21:10:18] INFO	Feature 57: r2_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:10:18] INFO	Feature 58: r2_obs_placed is a numerical feature of type int64 with 28 unique values
+[04/21/19 21:10:18] INFO	Feature 59: r2_sen_placed is a numerical feature of type int64 with 46 unique values
+[04/21/19 21:10:18] INFO	Feature 60: r2_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:18] INFO	Feature 61: r2_max_hero_hit is a numerical feature of type int64 with 1233 unique values
+[04/21/19 21:10:18] INFO	Feature 62: r2_purchase_count is a numerical feature of type int64 with 139 unique values
+[04/21/19 21:10:18] INFO	Feature 63: r2_count_ability_use is a numerical feature of type int64 with 920 unique values
+[04/21/19 21:10:18] INFO	Feature 64: r2_damage_dealt is a numerical feature of type int64 with 35641 unique values
+[04/21/19 21:10:21] INFO	Feature 65: r2_damage_received is a numerical feature of type int64 with 21781 unique values
+[04/21/19 21:10:23] INFO	Feature 66: r3_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:23] INFO	Feature 67: r3_kills is a numerical feature of type int64 with 37 unique values
+[04/21/19 21:10:23] INFO	Feature 68: r3_deaths is a numerical feature of type int64 with 27 unique values
+[04/21/19 21:10:23] INFO	Feature 69: r3_assists is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:10:23] INFO	Feature 70: r3_denies is a numerical feature of type int64 with 73 unique values
+[04/21/19 21:10:23] INFO	Feature 71: r3_gold is a numerical feature of type int64 with 17928 unique values
+[04/21/19 21:10:25] INFO	Feature 72: r3_lh is a numerical feature of type int64 with 525 unique values
+[04/21/19 21:10:25] INFO	Feature 73: r3_xp is a numerical feature of type int64 with 18947 unique values
+[04/21/19 21:10:27] INFO	Feature 74: r3_health is a numerical feature of type int64 with 2928 unique values
+[04/21/19 21:10:27] INFO	Feature 75: r3_max_health is a numerical feature of type int64 with 751 unique values
+[04/21/19 21:10:27] INFO	Feature 76: r3_max_mana is a numerical feature of type float64 with 1458 unique values
+[04/21/19 21:10:27] INFO	Feature 77: r3_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:27] INFO	Feature 78: r3_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:10:27] INFO	Feature 79: r3_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:27] INFO	Feature 80: r3_stuns is a numerical feature of type float64 with 11074 unique values
+[04/21/19 21:10:27] INFO	Feature 81: r3_creeps_stacked is a numerical feature of type int64 with 62 unique values
+[04/21/19 21:10:27] INFO	Feature 82: r3_camps_stacked is a numerical feature of type int64 with 15 unique values
+[04/21/19 21:10:27] INFO	Feature 83: r3_rune_pickups is a numerical feature of type int64 with 39 unique values
+[04/21/19 21:10:27] INFO	Feature 84: r3_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:27] INFO	Feature 85: r3_teamfight_participation is a numerical feature of type float64 with 658 unique values
+[04/21/19 21:10:27] INFO	Feature 86: r3_towers_killed is a numerical feature of type int64 with 9 unique values
+[04/21/19 21:10:28] INFO	Feature 87: r3_roshans_killed is a numerical feature of type int64 with 4 unique values
+[04/21/19 21:10:28] INFO	Feature 88: r3_obs_placed is a numerical feature of type int64 with 28 unique values
+[04/21/19 21:10:28] INFO	Feature 89: r3_sen_placed is a numerical feature of type int64 with 47 unique values
+[04/21/19 21:10:28] INFO	Feature 90: r3_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:28] INFO	Feature 91: r3_max_hero_hit is a numerical feature of type int64 with 1278 unique values
+[04/21/19 21:10:28] INFO	Feature 92: r3_purchase_count is a numerical feature of type int64 with 136 unique values
+[04/21/19 21:10:28] INFO	Feature 93: r3_count_ability_use is a numerical feature of type int64 with 951 unique values
+[04/21/19 21:10:28] INFO	Feature 94: r3_damage_dealt is a numerical feature of type int64 with 35719 unique values
+[04/21/19 21:10:31] INFO	Feature 95: r3_damage_received is a numerical feature of type int64 with 21774 unique values
+[04/21/19 21:10:33] INFO	Feature 96: r4_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:33] INFO	Feature 97: r4_kills is a numerical feature of type int64 with 35 unique values
+[04/21/19 21:10:33] INFO	Feature 98: r4_deaths is a numerical feature of type int64 with 27 unique values
+[04/21/19 21:10:33] INFO	Feature 99: r4_assists is a numerical feature of type int64 with 40 unique values
+[04/21/19 21:10:33] INFO	Feature 100: r4_denies is a numerical feature of type int64 with 81 unique values
+[04/21/19 21:10:33] INFO	Feature 101: r4_gold is a numerical feature of type int64 with 17840 unique values
+[04/21/19 21:10:35] INFO	Feature 102: r4_lh is a numerical feature of type int64 with 537 unique values
+[04/21/19 21:10:35] INFO	Feature 103: r4_xp is a numerical feature of type int64 with 19078 unique values
+[04/21/19 21:10:37] INFO	Feature 104: r4_health is a numerical feature of type int64 with 2900 unique values
+[04/21/19 21:10:37] INFO	Feature 105: r4_max_health is a numerical feature of type int64 with 774 unique values
+[04/21/19 21:10:37] INFO	Feature 106: r4_max_mana is a numerical feature of type float64 with 1467 unique values
+[04/21/19 21:10:37] INFO	Feature 107: r4_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:37] INFO	Feature 108: r4_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:10:37] INFO	Feature 109: r4_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:37] INFO	Feature 110: r4_stuns is a numerical feature of type float64 with 11099 unique values
+[04/21/19 21:10:37] INFO	Feature 111: r4_creeps_stacked is a numerical feature of type int64 with 52 unique values
+[04/21/19 21:10:37] INFO	Feature 112: r4_camps_stacked is a numerical feature of type int64 with 13 unique values
+[04/21/19 21:10:37] INFO	Feature 113: r4_rune_pickups is a numerical feature of type int64 with 40 unique values
+[04/21/19 21:10:37] INFO	Feature 114: r4_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:37] INFO	Feature 115: r4_teamfight_participation is a numerical feature of type float64 with 648 unique values
+[04/21/19 21:10:37] INFO	Feature 116: r4_towers_killed is a numerical feature of type int64 with 9 unique values
+[04/21/19 21:10:37] INFO	Feature 117: r4_roshans_killed is a numerical feature of type int64 with 4 unique values
+[04/21/19 21:10:37] INFO	Feature 118: r4_obs_placed is a numerical feature of type int64 with 27 unique values
+[04/21/19 21:10:37] INFO	Feature 119: r4_sen_placed is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:10:37] INFO	Feature 120: r4_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:37] INFO	Feature 121: r4_max_hero_hit is a numerical feature of type int64 with 1223 unique values
+[04/21/19 21:10:38] INFO	Feature 122: r4_purchase_count is a numerical feature of type int64 with 135 unique values
+[04/21/19 21:10:38] INFO	Feature 123: r4_count_ability_use is a numerical feature of type int64 with 956 unique values
+[04/21/19 21:10:38] INFO	Feature 124: r4_damage_dealt is a numerical feature of type int64 with 35793 unique values
+[04/21/19 21:10:41] INFO	Feature 125: r4_damage_received is a numerical feature of type int64 with 21806 unique values
+[04/21/19 21:10:43] INFO	Feature 126: r5_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:43] INFO	Feature 127: r5_kills is a numerical feature of type int64 with 34 unique values
+[04/21/19 21:10:43] INFO	Feature 128: r5_deaths is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:43] INFO	Feature 129: r5_assists is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:10:43] INFO	Feature 130: r5_denies is a numerical feature of type int64 with 72 unique values
+[04/21/19 21:10:43] INFO	Feature 131: r5_gold is a numerical feature of type int64 with 17892 unique values
+[04/21/19 21:10:45] INFO	Feature 132: r5_lh is a numerical feature of type int64 with 511 unique values
+[04/21/19 21:10:45] INFO	Feature 133: r5_xp is a numerical feature of type int64 with 19030 unique values
+[04/21/19 21:10:47] INFO	Feature 134: r5_health is a numerical feature of type int64 with 2927 unique values
+[04/21/19 21:10:47] INFO	Feature 135: r5_max_health is a numerical feature of type int64 with 759 unique values
+[04/21/19 21:10:47] INFO	Feature 136: r5_max_mana is a numerical feature of type float64 with 1429 unique values
+[04/21/19 21:10:47] INFO	Feature 137: r5_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:47] INFO	Feature 138: r5_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:10:47] INFO	Feature 139: r5_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:47] INFO	Feature 140: r5_stuns is a numerical feature of type float64 with 11077 unique values
+[04/21/19 21:10:47] INFO	Feature 141: r5_creeps_stacked is a numerical feature of type int64 with 53 unique values
+[04/21/19 21:10:47] INFO	Feature 142: r5_camps_stacked is a numerical feature of type int64 with 15 unique values
+[04/21/19 21:10:47] INFO	Feature 143: r5_rune_pickups is a numerical feature of type int64 with 39 unique values
+[04/21/19 21:10:47] INFO	Feature 144: r5_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:47] INFO	Feature 145: r5_teamfight_participation is a numerical feature of type float64 with 647 unique values
+[04/21/19 21:10:47] INFO	Feature 146: r5_towers_killed is a numerical feature of type int64 with 9 unique values
+[04/21/19 21:10:47] INFO	Feature 147: r5_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:10:47] INFO	Feature 148: r5_obs_placed is a numerical feature of type int64 with 27 unique values
+[04/21/19 21:10:47] INFO	Feature 149: r5_sen_placed is a numerical feature of type int64 with 41 unique values
+[04/21/19 21:10:47] INFO	Feature 150: r5_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:47] INFO	Feature 151: r5_max_hero_hit is a numerical feature of type int64 with 1254 unique values
+[04/21/19 21:10:48] INFO	Feature 152: r5_purchase_count is a numerical feature of type int64 with 131 unique values
+[04/21/19 21:10:48] INFO	Feature 153: r5_count_ability_use is a numerical feature of type int64 with 926 unique values
+[04/21/19 21:10:48] INFO	Feature 154: r5_damage_dealt is a numerical feature of type int64 with 35746 unique values
+[04/21/19 21:10:51] INFO	Feature 155: r5_damage_received is a numerical feature of type int64 with 21759 unique values
+[04/21/19 21:10:53] INFO	Feature 156: d1_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:10:53] INFO	Feature 157: d1_kills is a numerical feature of type int64 with 35 unique values
+[04/21/19 21:10:53] INFO	Feature 158: d1_deaths is a numerical feature of type int64 with 28 unique values
+[04/21/19 21:10:53] INFO	Feature 159: d1_assists is a numerical feature of type int64 with 39 unique values
+[04/21/19 21:10:53] INFO	Feature 160: d1_denies is a numerical feature of type int64 with 73 unique values
+[04/21/19 21:10:53] INFO	Feature 161: d1_gold is a numerical feature of type int64 with 18068 unique values
+[04/21/19 21:10:55] INFO	Feature 162: d1_lh is a numerical feature of type int64 with 535 unique values
+[04/21/19 21:10:55] INFO	Feature 163: d1_xp is a numerical feature of type int64 with 19084 unique values
+[04/21/19 21:10:57] INFO	Feature 164: d1_health is a numerical feature of type int64 with 2953 unique values
+[04/21/19 21:10:57] INFO	Feature 165: d1_max_health is a numerical feature of type int64 with 770 unique values
+[04/21/19 21:10:57] INFO	Feature 166: d1_max_mana is a numerical feature of type float64 with 1458 unique values
+[04/21/19 21:10:57] INFO	Feature 167: d1_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:10:57] INFO	Feature 168: d1_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:10:57] INFO	Feature 169: d1_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:10:57] INFO	Feature 170: d1_stuns is a numerical feature of type float64 with 10860 unique values
+[04/21/19 21:10:57] INFO	Feature 171: d1_creeps_stacked is a numerical feature of type int64 with 68 unique values
+[04/21/19 21:10:57] INFO	Feature 172: d1_camps_stacked is a numerical feature of type int64 with 21 unique values
+[04/21/19 21:10:57] INFO	Feature 173: d1_rune_pickups is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:10:57] INFO	Feature 174: d1_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:10:57] INFO	Feature 175: d1_teamfight_participation is a numerical feature of type float64 with 661 unique values
+[04/21/19 21:10:57] INFO	Feature 176: d1_towers_killed is a numerical feature of type int64 with 8 unique values
+[04/21/19 21:10:58] INFO	Feature 177: d1_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:10:58] INFO	Feature 178: d1_obs_placed is a numerical feature of type int64 with 24 unique values
+[04/21/19 21:10:58] INFO	Feature 179: d1_sen_placed is a numerical feature of type int64 with 37 unique values
+[04/21/19 21:10:58] INFO	Feature 180: d1_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:10:58] INFO	Feature 181: d1_max_hero_hit is a numerical feature of type int64 with 1266 unique values
+[04/21/19 21:10:58] INFO	Feature 182: d1_purchase_count is a numerical feature of type int64 with 132 unique values
+[04/21/19 21:10:58] INFO	Feature 183: d1_count_ability_use is a numerical feature of type int64 with 1002 unique values
+[04/21/19 21:10:58] INFO	Feature 184: d1_damage_dealt is a numerical feature of type int64 with 35935 unique values
+[04/21/19 21:11:01] INFO	Feature 185: d1_damage_received is a numerical feature of type int64 with 21918 unique values
+[04/21/19 21:11:03] INFO	Feature 186: d2_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:11:03] INFO	Feature 187: d2_kills is a numerical feature of type int64 with 35 unique values
+[04/21/19 21:11:03] INFO	Feature 188: d2_deaths is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:03] INFO	Feature 189: d2_assists is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:11:03] INFO	Feature 190: d2_denies is a numerical feature of type int64 with 79 unique values
+[04/21/19 21:11:04] INFO	Feature 191: d2_gold is a numerical feature of type int64 with 17894 unique values
+[04/21/19 21:11:05] INFO	Feature 192: d2_lh is a numerical feature of type int64 with 527 unique values
+[04/21/19 21:11:05] INFO	Feature 193: d2_xp is a numerical feature of type int64 with 18941 unique values
+[04/21/19 21:11:07] INFO	Feature 194: d2_health is a numerical feature of type int64 with 2939 unique values
+[04/21/19 21:11:07] INFO	Feature 195: d2_max_health is a numerical feature of type int64 with 762 unique values
+[04/21/19 21:11:07] INFO	Feature 196: d2_max_mana is a numerical feature of type float64 with 1451 unique values
+[04/21/19 21:11:07] INFO	Feature 197: d2_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:08] INFO	Feature 198: d2_x is a numerical feature of type int64 with 62 unique values
+[04/21/19 21:11:08] INFO	Feature 199: d2_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:11:08] INFO	Feature 200: d2_stuns is a numerical feature of type float64 with 10886 unique values
+[04/21/19 21:11:08] INFO	Feature 201: d2_creeps_stacked is a numerical feature of type int64 with 68 unique values
+[04/21/19 21:11:08] INFO	Feature 202: d2_camps_stacked is a numerical feature of type int64 with 19 unique values
+[04/21/19 21:11:08] INFO	Feature 203: d2_rune_pickups is a numerical feature of type int64 with 40 unique values
+[04/21/19 21:11:08] INFO	Feature 204: d2_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:11:08] INFO	Feature 205: d2_teamfight_participation is a numerical feature of type float64 with 669 unique values
+[04/21/19 21:11:08] INFO	Feature 206: d2_towers_killed is a numerical feature of type int64 with 9 unique values
+[04/21/19 21:11:08] INFO	Feature 207: d2_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:11:08] INFO	Feature 208: d2_obs_placed is a numerical feature of type int64 with 27 unique values
+[04/21/19 21:11:08] INFO	Feature 209: d2_sen_placed is a numerical feature of type int64 with 47 unique values
+[04/21/19 21:11:08] INFO	Feature 210: d2_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:08] INFO	Feature 211: d2_max_hero_hit is a numerical feature of type int64 with 1264 unique values
+[04/21/19 21:11:08] INFO	Feature 212: d2_purchase_count is a numerical feature of type int64 with 137 unique values
+[04/21/19 21:11:08] INFO	Feature 213: d2_count_ability_use is a numerical feature of type int64 with 939 unique values
+[04/21/19 21:11:08] INFO	Feature 214: d2_damage_dealt is a numerical feature of type int64 with 35726 unique values
+[04/21/19 21:11:12] INFO	Feature 215: d2_damage_received is a numerical feature of type int64 with 21819 unique values
+[04/21/19 21:11:14] INFO	Feature 216: d3_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:11:14] INFO	Feature 217: d3_kills is a numerical feature of type int64 with 36 unique values
+[04/21/19 21:11:14] INFO	Feature 218: d3_deaths is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:14] INFO	Feature 219: d3_assists is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:11:14] INFO	Feature 220: d3_denies is a numerical feature of type int64 with 75 unique values
+[04/21/19 21:11:14] INFO	Feature 221: d3_gold is a numerical feature of type int64 with 17889 unique values
+[04/21/19 21:11:16] INFO	Feature 222: d3_lh is a numerical feature of type int64 with 529 unique values
+[04/21/19 21:11:16] INFO	Feature 223: d3_xp is a numerical feature of type int64 with 18945 unique values
+[04/21/19 21:11:17] INFO	Feature 224: d3_health is a numerical feature of type int64 with 2944 unique values
+[04/21/19 21:11:18] INFO	Feature 225: d3_max_health is a numerical feature of type int64 with 767 unique values
+[04/21/19 21:11:18] INFO	Feature 226: d3_max_mana is a numerical feature of type float64 with 1439 unique values
+[04/21/19 21:11:18] INFO	Feature 227: d3_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:18] INFO	Feature 228: d3_x is a numerical feature of type int64 with 61 unique values
+[04/21/19 21:11:18] INFO	Feature 229: d3_y is a numerical feature of type int64 with 58 unique values
+[04/21/19 21:11:18] INFO	Feature 230: d3_stuns is a numerical feature of type float64 with 11039 unique values
+[04/21/19 21:11:18] INFO	Feature 231: d3_creeps_stacked is a numerical feature of type int64 with 69 unique values
+[04/21/19 21:11:18] INFO	Feature 232: d3_camps_stacked is a numerical feature of type int64 with 18 unique values
+[04/21/19 21:11:18] INFO	Feature 233: d3_rune_pickups is a numerical feature of type int64 with 44 unique values
+[04/21/19 21:11:18] INFO	Feature 234: d3_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:11:18] INFO	Feature 235: d3_teamfight_participation is a numerical feature of type float64 with 675 unique values
+[04/21/19 21:11:18] INFO	Feature 236: d3_towers_killed is a numerical feature of type int64 with 10 unique values
+[04/21/19 21:11:18] INFO	Feature 237: d3_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:11:18] INFO	Feature 238: d3_obs_placed is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:18] INFO	Feature 239: d3_sen_placed is a numerical feature of type int64 with 45 unique values
+[04/21/19 21:11:18] INFO	Feature 240: d3_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:18] INFO	Feature 241: d3_max_hero_hit is a numerical feature of type int64 with 1284 unique values
+[04/21/19 21:11:19] INFO	Feature 242: d3_purchase_count is a numerical feature of type int64 with 139 unique values
+[04/21/19 21:11:19] INFO	Feature 243: d3_count_ability_use is a numerical feature of type int64 with 970 unique values
+[04/21/19 21:11:19] INFO	Feature 244: d3_damage_dealt is a numerical feature of type int64 with 35603 unique values
+[04/21/19 21:11:22] INFO	Feature 245: d3_damage_received is a numerical feature of type int64 with 21869 unique values
+[04/21/19 21:11:24] INFO	Feature 246: d4_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:11:24] INFO	Feature 247: d4_kills is a numerical feature of type int64 with 36 unique values
+[04/21/19 21:11:24] INFO	Feature 248: d4_deaths is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:24] INFO	Feature 249: d4_assists is a numerical feature of type int64 with 43 unique values
+[04/21/19 21:11:24] INFO	Feature 250: d4_denies is a numerical feature of type int64 with 79 unique values
+[04/21/19 21:11:24] INFO	Feature 251: d4_gold is a numerical feature of type int64 with 17954 unique values
+[04/21/19 21:11:26] INFO	Feature 252: d4_lh is a numerical feature of type int64 with 524 unique values
+[04/21/19 21:11:26] INFO	Feature 253: d4_xp is a numerical feature of type int64 with 18947 unique values
+[04/21/19 21:11:28] INFO	Feature 254: d4_health is a numerical feature of type int64 with 2930 unique values
+[04/21/19 21:11:28] INFO	Feature 255: d4_max_health is a numerical feature of type int64 with 766 unique values
+[04/21/19 21:11:28] INFO	Feature 256: d4_max_mana is a numerical feature of type float64 with 1435 unique values
+[04/21/19 21:11:28] INFO	Feature 257: d4_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:28] INFO	Feature 258: d4_x is a numerical feature of type int64 with 60 unique values
+[04/21/19 21:11:28] INFO	Feature 259: d4_y is a numerical feature of type int64 with 58 unique values
+[04/21/19 21:11:28] INFO	Feature 260: d4_stuns is a numerical feature of type float64 with 10932 unique values
+[04/21/19 21:11:28] INFO	Feature 261: d4_creeps_stacked is a numerical feature of type int64 with 63 unique values
+[04/21/19 21:11:28] INFO	Feature 262: d4_camps_stacked is a numerical feature of type int64 with 19 unique values
+[04/21/19 21:11:29] INFO	Feature 263: d4_rune_pickups is a numerical feature of type int64 with 44 unique values
+[04/21/19 21:11:29] INFO	Feature 264: d4_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:11:29] INFO	Feature 265: d4_teamfight_participation is a numerical feature of type float64 with 657 unique values
+[04/21/19 21:11:29] INFO	Feature 266: d4_towers_killed is a numerical feature of type int64 with 10 unique values
+[04/21/19 21:11:29] INFO	Feature 267: d4_roshans_killed is a numerical feature of type int64 with 5 unique values
+[04/21/19 21:11:29] INFO	Feature 268: d4_obs_placed is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:29] INFO	Feature 269: d4_sen_placed is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:11:29] INFO	Feature 270: d4_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:29] INFO	Feature 271: d4_max_hero_hit is a numerical feature of type int64 with 1253 unique values
+[04/21/19 21:11:29] INFO	Feature 272: d4_purchase_count is a numerical feature of type int64 with 131 unique values
+[04/21/19 21:11:29] INFO	Feature 273: d4_count_ability_use is a numerical feature of type int64 with 941 unique values
+[04/21/19 21:11:29] INFO	Feature 274: d4_damage_dealt is a numerical feature of type int64 with 35761 unique values
+[04/21/19 21:11:33] INFO	Feature 275: d4_damage_received is a numerical feature of type int64 with 21803 unique values
+[04/21/19 21:11:35] INFO	Feature 276: d5_hero_id is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:11:35] INFO	Feature 277: d5_kills is a numerical feature of type int64 with 37 unique values
+[04/21/19 21:11:35] INFO	Feature 278: d5_deaths is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:35] INFO	Feature 279: d5_assists is a numerical feature of type int64 with 44 unique values
+[04/21/19 21:11:35] INFO	Feature 280: d5_denies is a numerical feature of type int64 with 72 unique values
+[04/21/19 21:11:35] INFO	Feature 281: d5_gold is a numerical feature of type int64 with 17828 unique values
+[04/21/19 21:11:37] INFO	Feature 282: d5_lh is a numerical feature of type int64 with 520 unique values
+[04/21/19 21:11:37] INFO	Feature 283: d5_xp is a numerical feature of type int64 with 18899 unique values
+[04/21/19 21:11:38] INFO	Feature 284: d5_health is a numerical feature of type int64 with 2928 unique values
+[04/21/19 21:11:39] INFO	Feature 285: d5_max_health is a numerical feature of type int64 with 755 unique values
+[04/21/19 21:11:39] INFO	Feature 286: d5_max_mana is a numerical feature of type float64 with 1464 unique values
+[04/21/19 21:11:39] INFO	Feature 287: d5_level is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:11:39] INFO	Feature 288: d5_x is a numerical feature of type int64 with 60 unique values
+[04/21/19 21:11:39] INFO	Feature 289: d5_y is a numerical feature of type int64 with 59 unique values
+[04/21/19 21:11:39] INFO	Feature 290: d5_stuns is a numerical feature of type float64 with 10935 unique values
+[04/21/19 21:11:39] INFO	Feature 291: d5_creeps_stacked is a numerical feature of type int64 with 68 unique values
+[04/21/19 21:11:39] INFO	Feature 292: d5_camps_stacked is a numerical feature of type int64 with 22 unique values
+[04/21/19 21:11:39] INFO	Feature 293: d5_rune_pickups is a numerical feature of type int64 with 46 unique values
+[04/21/19 21:11:39] INFO	Feature 294: d5_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:11:39] INFO	Feature 295: d5_teamfight_participation is a numerical feature of type float64 with 668 unique values
+[04/21/19 21:11:39] INFO	Feature 296: d5_towers_killed is a numerical feature of type int64 with 10 unique values
+[04/21/19 21:11:39] INFO	Feature 297: d5_roshans_killed is a numerical feature of type int64 with 6 unique values
+[04/21/19 21:11:39] INFO	Feature 298: d5_obs_placed is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:40] INFO	Feature 299: d5_sen_placed is a numerical feature of type int64 with 42 unique values
+[04/21/19 21:11:40] INFO	Feature 300: d5_ability_level is a numerical feature of type int64 with 26 unique values
+[04/21/19 21:11:40] INFO	Feature 301: d5_max_hero_hit is a numerical feature of type int64 with 1249 unique values
+[04/21/19 21:11:40] INFO	Feature 302: d5_purchase_count is a numerical feature of type int64 with 136 unique values
+[04/21/19 21:11:40] INFO	Feature 303: d5_count_ability_use is a numerical feature of type int64 with 951 unique values
+[04/21/19 21:11:40] INFO	Feature 304: d5_damage_dealt is a numerical feature of type int64 with 35638 unique values
+[04/21/19 21:11:43] INFO	Feature 305: d5_damage_received is a numerical feature of type int64 with 21709 unique values
+[04/21/19 21:11:45] INFO	Feature 306: r_total_kills is a numerical feature of type int64 with 79 unique values
+[04/21/19 21:11:45] INFO	Feature 307: d_total_kills is a numerical feature of type int64 with 82 unique values
+[04/21/19 21:11:46] INFO	Feature 308: total_kills_ratio is a numerical feature of type float64 with 1730 unique values
+[04/21/19 21:11:46] INFO	Feature 309: r_std_kills is a numerical feature of type float64 with 817 unique values
+[04/21/19 21:11:46] INFO	Feature 310: d_std_kills is a numerical feature of type float64 with 865 unique values
+[04/21/19 21:11:46] INFO	Feature 311: std_kills_ratio is a numerical feature of type float64 with 16311 unique values
+[04/21/19 21:11:46] INFO	Feature 312: r_mean_kills is a numerical feature of type float64 with 79 unique values
+[04/21/19 21:11:46] INFO	Feature 313: d_mean_kills is a numerical feature of type float64 with 82 unique values
+[04/21/19 21:11:46] INFO	Feature 314: mean_kills_ratio is a numerical feature of type float64 with 1830 unique values
+[04/21/19 21:11:46] INFO	Feature 315: r_total_deaths is a numerical feature of type int64 with 84 unique values
+[04/21/19 21:11:46] INFO	Feature 316: d_total_deaths is a numerical feature of type int64 with 81 unique values
+[04/21/19 21:11:46] INFO	Feature 317: total_deaths_ratio is a numerical feature of type float64 with 1782 unique values
+[04/21/19 21:11:46] INFO	Feature 318: r_std_deaths is a numerical feature of type float64 with 402 unique values
+[04/21/19 21:11:46] INFO	Feature 319: d_std_deaths is a numerical feature of type float64 with 379 unique values
+[04/21/19 21:11:46] INFO	Feature 320: std_deaths_ratio is a numerical feature of type float64 with 8886 unique values
+[04/21/19 21:11:46] INFO	Feature 321: r_mean_deaths is a numerical feature of type float64 with 84 unique values
+[04/21/19 21:11:46] INFO	Feature 322: d_mean_deaths is a numerical feature of type float64 with 81 unique values
+[04/21/19 21:11:46] INFO	Feature 323: mean_deaths_ratio is a numerical feature of type float64 with 1886 unique values
+[04/21/19 21:11:46] INFO	Feature 324: r_total_assists is a numerical feature of type int64 with 149 unique values
+[04/21/19 21:11:46] INFO	Feature 325: d_total_assists is a numerical feature of type int64 with 158 unique values
+[04/21/19 21:11:47] INFO	Feature 326: total_assists_ratio is a numerical feature of type float64 with 4064 unique values
+[04/21/19 21:11:47] INFO	Feature 327: r_std_assists is a numerical feature of type float64 with 693 unique values
+[04/21/19 21:11:47] INFO	Feature 328: d_std_assists is a numerical feature of type float64 with 719 unique values
+[04/21/19 21:11:47] INFO	Feature 329: std_assists_ratio is a numerical feature of type float64 with 15909 unique values
+[04/21/19 21:11:47] INFO	Feature 330: r_mean_assists is a numerical feature of type float64 with 149 unique values
+[04/21/19 21:11:47] INFO	Feature 331: d_mean_assists is a numerical feature of type float64 with 158 unique values
+[04/21/19 21:11:47] INFO	Feature 332: mean_assists_ratio is a numerical feature of type float64 with 4289 unique values
+[04/21/19 21:11:47] INFO	Feature 333: r_total_denies is a numerical feature of type int64 with 129 unique values
+[04/21/19 21:11:47] INFO	Feature 334: d_total_denies is a numerical feature of type int64 with 133 unique values
+[04/21/19 21:11:47] INFO	Feature 335: total_denies_ratio is a numerical feature of type float64 with 3967 unique values
+[04/21/19 21:11:47] INFO	Feature 336: r_std_denies is a numerical feature of type float64 with 3379 unique values
+[04/21/19 21:11:47] INFO	Feature 337: d_std_denies is a numerical feature of type float64 with 3456 unique values
+[04/21/19 21:11:47] INFO	Feature 338: std_denies_ratio is a numerical feature of type float64 with 40428 unique values
+[04/21/19 21:11:47] INFO	Feature 339: r_mean_denies is a numerical feature of type float64 with 129 unique values
+[04/21/19 21:11:47] INFO	Feature 340: d_mean_denies is a numerical feature of type float64 with 133 unique values
+[04/21/19 21:11:47] INFO	Feature 341: mean_denies_ratio is a numerical feature of type float64 with 4193 unique values
+[04/21/19 21:11:47] INFO	Feature 342: r_total_gold is a numerical feature of type int64 with 37066 unique values
+[04/21/19 21:11:51] INFO	Feature 343: d_total_gold is a numerical feature of type int64 with 36869 unique values
+[04/21/19 21:11:54] INFO	Feature 344: total_gold_ratio is a numerical feature of type float64 with 49184 unique values
+[04/21/19 21:11:54] INFO	Feature 345: r_std_gold is a numerical feature of type float64 with 48688 unique values
+[04/21/19 21:11:54] INFO	Feature 346: d_std_gold is a numerical feature of type float64 with 48661 unique values
+[04/21/19 21:11:54] INFO	Feature 347: std_gold_ratio is a numerical feature of type float64 with 48828 unique values
+[04/21/19 21:11:55] INFO	Feature 348: r_mean_gold is a numerical feature of type float64 with 37066 unique values
+[04/21/19 21:11:55] INFO	Feature 349: d_mean_gold is a numerical feature of type float64 with 36869 unique values
+[04/21/19 21:11:55] INFO	Feature 350: mean_gold_ratio is a numerical feature of type float64 with 49198 unique values
+[04/21/19 21:11:55] INFO	Feature 351: r_total_lh is a numerical feature of type int64 with 1479 unique values
+[04/21/19 21:11:55] INFO	Feature 352: d_total_lh is a numerical feature of type int64 with 1493 unique values
+[04/21/19 21:11:55] INFO	Feature 353: total_lh_ratio is a numerical feature of type float64 with 28311 unique values
+[04/21/19 21:11:55] INFO	Feature 354: r_std_lh is a numerical feature of type float64 with 27185 unique values
+[04/21/19 21:11:55] INFO	Feature 355: d_std_lh is a numerical feature of type float64 with 27176 unique values
+[04/21/19 21:11:55] INFO	Feature 356: std_lh_ratio is a numerical feature of type float64 with 47657 unique values
+[04/21/19 21:11:55] INFO	Feature 357: r_mean_lh is a numerical feature of type float64 with 1479 unique values
+[04/21/19 21:11:55] INFO	Feature 358: d_mean_lh is a numerical feature of type float64 with 1493 unique values
+[04/21/19 21:11:55] INFO	Feature 359: mean_lh_ratio is a numerical feature of type float64 with 29728 unique values
+[04/21/19 21:11:55] INFO	Feature 360: r_total_xp is a numerical feature of type int64 with 37996 unique values
+[04/21/19 21:11:59] INFO	Feature 361: d_total_xp is a numerical feature of type int64 with 38172 unique values
+[04/21/19 21:12:03] INFO	Feature 362: total_xp_ratio is a numerical feature of type float64 with 48834 unique values
+[04/21/19 21:12:03] INFO	Feature 363: r_std_xp is a numerical feature of type float64 with 48837 unique values
+[04/21/19 21:12:03] INFO	Feature 364: d_std_xp is a numerical feature of type float64 with 48838 unique values
+[04/21/19 21:12:03] INFO	Feature 365: std_xp_ratio is a numerical feature of type float64 with 48931 unique values
+[04/21/19 21:12:03] INFO	Feature 366: r_mean_xp is a numerical feature of type float64 with 37996 unique values
+[04/21/19 21:12:03] INFO	Feature 367: d_mean_xp is a numerical feature of type float64 with 38172 unique values
+[04/21/19 21:12:03] INFO	Feature 368: mean_xp_ratio is a numerical feature of type float64 with 48851 unique values
+[04/21/19 21:12:03] INFO	Feature 369: r_total_health is a numerical feature of type int64 with 9640 unique values
+[04/21/19 21:12:04] INFO	Feature 370: d_total_health is a numerical feature of type int64 with 9741 unique values
+[04/21/19 21:12:05] INFO	Feature 371: total_health_ratio is a numerical feature of type float64 with 48967 unique values
+[04/21/19 21:12:05] INFO	Feature 372: r_std_health is a numerical feature of type float64 with 48365 unique values
+[04/21/19 21:12:05] INFO	Feature 373: d_std_health is a numerical feature of type float64 with 48338 unique values
+[04/21/19 21:12:05] INFO	Feature 374: std_health_ratio is a numerical feature of type float64 with 49319 unique values
+[04/21/19 21:12:05] INFO	Feature 375: r_mean_health is a numerical feature of type float64 with 9640 unique values
+[04/21/19 21:12:05] INFO	Feature 376: d_mean_health is a numerical feature of type float64 with 9741 unique values
+[04/21/19 21:12:05] INFO	Feature 377: mean_health_ratio is a numerical feature of type float64 with 49033 unique values
+[04/21/19 21:12:05] INFO	Feature 378: r_total_max_health is a numerical feature of type int64 with 2435 unique values
+[04/21/19 21:12:06] INFO	Feature 379: d_total_max_health is a numerical feature of type int64 with 2457 unique values
+[04/21/19 21:12:06] INFO	Feature 380: total_max_health_ratio is a numerical feature of type float64 with 33428 unique values
+[04/21/19 21:12:06] INFO	Feature 381: r_std_max_health is a numerical feature of type float64 with 19192 unique values
+[04/21/19 21:12:06] INFO	Feature 382: d_std_max_health is a numerical feature of type float64 with 19148 unique values
+[04/21/19 21:12:06] INFO	Feature 383: std_max_health_ratio is a numerical feature of type float64 with 47735 unique values
+[04/21/19 21:12:06] INFO	Feature 384: r_mean_max_health is a numerical feature of type float64 with 2435 unique values
+[04/21/19 21:12:06] INFO	Feature 385: d_mean_max_health is a numerical feature of type float64 with 2457 unique values
+[04/21/19 21:12:06] INFO	Feature 386: mean_max_health_ratio is a numerical feature of type float64 with 33430 unique values
+[04/21/19 21:12:06] INFO	Feature 387: r_total_max_mana is a numerical feature of type float64 with 11744 unique values
+[04/21/19 21:12:06] INFO	Feature 388: d_total_max_mana is a numerical feature of type float64 with 11716 unique values
+[04/21/19 21:12:06] INFO	Feature 389: total_max_mana_ratio is a numerical feature of type float64 with 43508 unique values
+[04/21/19 21:12:06] INFO	Feature 390: r_std_max_mana is a numerical feature of type float64 with 34100 unique values
+[04/21/19 21:12:07] INFO	Feature 391: d_std_max_mana is a numerical feature of type float64 with 33703 unique values
+[04/21/19 21:12:07] INFO	Feature 392: std_max_mana_ratio is a numerical feature of type float64 with 49406 unique values
+[04/21/19 21:12:07] INFO	Feature 393: r_mean_max_mana is a numerical feature of type float64 with 11368 unique values
+[04/21/19 21:12:07] INFO	Feature 394: d_mean_max_mana is a numerical feature of type float64 with 11372 unique values
+[04/21/19 21:12:07] INFO	Feature 395: mean_max_mana_ratio is a numerical feature of type float64 with 43507 unique values
+[04/21/19 21:12:07] INFO	Feature 396: r_total_level is a numerical feature of type int64 with 121 unique values
+[04/21/19 21:12:07] INFO	Feature 397: d_total_level is a numerical feature of type int64 with 121 unique values
+[04/21/19 21:12:07] INFO	Feature 398: total_level_ratio is a numerical feature of type float64 with 2500 unique values
+[04/21/19 21:12:07] INFO	Feature 399: r_std_level is a numerical feature of type float64 with 465 unique values
+[04/21/19 21:12:07] INFO	Feature 400: d_std_level is a numerical feature of type float64 with 460 unique values
+[04/21/19 21:12:07] INFO	Feature 401: std_level_ratio is a numerical feature of type float64 with 9832 unique values
+[04/21/19 21:12:07] INFO	Feature 402: r_mean_level is a numerical feature of type float64 with 121 unique values
+[04/21/19 21:12:07] INFO	Feature 403: d_mean_level is a numerical feature of type float64 with 121 unique values
+[04/21/19 21:12:07] INFO	Feature 404: mean_level_ratio is a numerical feature of type float64 with 2623 unique values
+[04/21/19 21:12:07] INFO	Feature 405: r_total_x is a numerical feature of type int64 with 278 unique values
+[04/21/19 21:12:08] INFO	Feature 406: d_total_x is a numerical feature of type int64 with 276 unique values
+[04/21/19 21:12:08] INFO	Feature 407: total_x_ratio is a numerical feature of type float64 with 20748 unique values
+[04/21/19 21:12:08] INFO	Feature 408: r_std_x is a numerical feature of type float64 with 5244 unique values
+[04/21/19 21:12:08] INFO	Feature 409: d_std_x is a numerical feature of type float64 with 5185 unique values
+[04/21/19 21:12:08] INFO	Feature 410: std_x_ratio is a numerical feature of type float64 with 48564 unique values
+[04/21/19 21:12:08] INFO	Feature 411: r_mean_x is a numerical feature of type float64 with 278 unique values
+[04/21/19 21:12:08] INFO	Feature 412: d_mean_x is a numerical feature of type float64 with 276 unique values
+[04/21/19 21:12:08] INFO	Feature 413: mean_x_ratio is a numerical feature of type float64 with 21596 unique values
+[04/21/19 21:12:08] INFO	Feature 414: r_total_y is a numerical feature of type int64 with 258 unique values
+[04/21/19 21:12:08] INFO	Feature 415: d_total_y is a numerical feature of type int64 with 261 unique values
+[04/21/19 21:12:08] INFO	Feature 416: total_y_ratio is a numerical feature of type float64 with 17663 unique values
+[04/21/19 21:12:08] INFO	Feature 417: r_std_y is a numerical feature of type float64 with 4106 unique values
+[04/21/19 21:12:08] INFO	Feature 418: d_std_y is a numerical feature of type float64 with 4099 unique values
+[04/21/19 21:12:08] INFO	Feature 419: std_y_ratio is a numerical feature of type float64 with 47938 unique values
+[04/21/19 21:12:09] INFO	Feature 420: r_mean_y is a numerical feature of type float64 with 258 unique values
+[04/21/19 21:12:09] INFO	Feature 421: d_mean_y is a numerical feature of type float64 with 261 unique values
+[04/21/19 21:12:09] INFO	Feature 422: mean_y_ratio is a numerical feature of type float64 with 18394 unique values
+[04/21/19 21:12:09] INFO	Feature 423: r_total_stuns is a numerical feature of type float64 with 25781 unique values
+[04/21/19 21:12:09] INFO	Feature 424: d_total_stuns is a numerical feature of type float64 with 25378 unique values
+[04/21/19 21:12:09] INFO	Feature 425: total_stuns_ratio is a numerical feature of type float64 with 45454 unique values
+[04/21/19 21:12:09] INFO	Feature 426: r_std_stuns is a numerical feature of type float64 with 43007 unique values
+[04/21/19 21:12:09] INFO	Feature 427: d_std_stuns is a numerical feature of type float64 with 42758 unique values
+[04/21/19 21:12:09] INFO	Feature 428: std_stuns_ratio is a numerical feature of type float64 with 45568 unique values
+[04/21/19 21:12:09] INFO	Feature 429: r_mean_stuns is a numerical feature of type float64 with 25544 unique values
+[04/21/19 21:12:09] INFO	Feature 430: d_mean_stuns is a numerical feature of type float64 with 25162 unique values
+[04/21/19 21:12:09] INFO	Feature 431: mean_stuns_ratio is a numerical feature of type float64 with 45455 unique values
+[04/21/19 21:12:09] INFO	Feature 432: r_total_creeps_stacked is a numerical feature of type int64 with 83 unique values
+[04/21/19 21:12:09] INFO	Feature 433: d_total_creeps_stacked is a numerical feature of type int64 with 105 unique values
+[04/21/19 21:12:10] INFO	Feature 434: total_creeps_stacked_ratio is a numerical feature of type float64 with 1023 unique values
+[04/21/19 21:12:10] INFO	Feature 435: r_std_creeps_stacked is a numerical feature of type float64 with 887 unique values
+[04/21/19 21:12:10] INFO	Feature 436: d_std_creeps_stacked is a numerical feature of type float64 with 1186 unique values
+[04/21/19 21:12:10] INFO	Feature 437: std_creeps_stacked_ratio is a numerical feature of type float64 with 6115 unique values
+[04/21/19 21:12:10] INFO	Feature 438: r_mean_creeps_stacked is a numerical feature of type float64 with 83 unique values
+[04/21/19 21:12:10] INFO	Feature 439: d_mean_creeps_stacked is a numerical feature of type float64 with 105 unique values
+[04/21/19 21:12:10] INFO	Feature 440: mean_creeps_stacked_ratio is a numerical feature of type float64 with 1089 unique values
+[04/21/19 21:12:10] INFO	Feature 441: r_total_camps_stacked is a numerical feature of type int64 with 21 unique values
+[04/21/19 21:12:10] INFO	Feature 442: d_total_camps_stacked is a numerical feature of type int64 with 30 unique values
+[04/21/19 21:12:10] INFO	Feature 443: total_camps_stacked_ratio is a numerical feature of type float64 with 167 unique values
+[04/21/19 21:12:10] INFO	Feature 444: r_std_camps_stacked is a numerical feature of type float64 with 143 unique values
+[04/21/19 21:12:10] INFO	Feature 445: d_std_camps_stacked is a numerical feature of type float64 with 213 unique values
+[04/21/19 21:12:10] INFO	Feature 446: std_camps_stacked_ratio is a numerical feature of type float64 with 1419 unique values
+[04/21/19 21:12:10] INFO	Feature 447: r_mean_camps_stacked is a numerical feature of type float64 with 21 unique values
+[04/21/19 21:12:10] INFO	Feature 448: d_mean_camps_stacked is a numerical feature of type float64 with 30 unique values
+[04/21/19 21:12:11] INFO	Feature 449: mean_camps_stacked_ratio is a numerical feature of type float64 with 174 unique values
+[04/21/19 21:12:11] INFO	Feature 450: r_total_rune_pickups is a numerical feature of type int64 with 107 unique values
+[04/21/19 21:12:11] INFO	Feature 451: d_total_rune_pickups is a numerical feature of type int64 with 115 unique values
+[04/21/19 21:12:11] INFO	Feature 452: total_rune_pickups_ratio is a numerical feature of type float64 with 2682 unique values
+[04/21/19 21:12:11] INFO	Feature 453: r_std_rune_pickups is a numerical feature of type float64 with 942 unique values
+[04/21/19 21:12:11] INFO	Feature 454: d_std_rune_pickups is a numerical feature of type float64 with 1014 unique values
+[04/21/19 21:12:11] INFO	Feature 455: std_rune_pickups_ratio is a numerical feature of type float64 with 21798 unique values
+[04/21/19 21:12:11] INFO	Feature 456: r_mean_rune_pickups is a numerical feature of type float64 with 107 unique values
+[04/21/19 21:12:11] INFO	Feature 457: d_mean_rune_pickups is a numerical feature of type float64 with 115 unique values
+[04/21/19 21:12:11] INFO	Feature 458: mean_rune_pickups_ratio is a numerical feature of type float64 with 2831 unique values
+[04/21/19 21:12:11] INFO	Feature 459: r_total_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:12:11] INFO	Feature 460: d_total_firstblood_claimed is a numerical feature of type int64 with 2 unique values
+[04/21/19 21:12:11] INFO	Feature 461: total_firstblood_claimed_ratio is a numerical feature of type float64 with 3 unique values
+[04/21/19 21:12:11] INFO	Feature 462: r_std_firstblood_claimed is a numerical feature of type float64 with 3 unique values
+[04/21/19 21:12:12] INFO	Feature 463: d_std_firstblood_claimed is a numerical feature of type float64 with 3 unique values
+[04/21/19 21:12:12] INFO	Feature 464: std_firstblood_claimed_ratio is a numerical feature of type float64 with 3 unique values
+[04/21/19 21:12:12] INFO	Feature 465: r_mean_firstblood_claimed is a numerical feature of type float64 with 2 unique values
+[04/21/19 21:12:12] INFO	Feature 466: d_mean_firstblood_claimed is a numerical feature of type float64 with 2 unique values
+[04/21/19 21:12:12] INFO	Feature 467: mean_firstblood_claimed_ratio is a numerical feature of type float64 with 3 unique values
+[04/21/19 21:12:12] INFO	Feature 468: r_total_teamfight_participation is a numerical feature of type float64 with 2887 unique values
+[04/21/19 21:12:12] INFO	Feature 469: d_total_teamfight_participation is a numerical feature of type float64 with 2933 unique values
+[04/21/19 21:12:12] INFO	Feature 470: total_teamfight_participation_ratio is a numerical feature of type float64 with 31679 unique values
+[04/21/19 21:12:12] INFO	Feature 471: r_std_teamfight_participation is a numerical feature of type float64 with 20415 unique values
+[04/21/19 21:12:12] INFO	Feature 472: d_std_teamfight_participation is a numerical feature of type float64 with 20339 unique values
+[04/21/19 21:12:12] INFO	Feature 473: std_teamfight_participation_ratio is a numerical feature of type float64 with 39149 unique values
+[04/21/19 21:12:12] INFO	Feature 474: r_mean_teamfight_participation is a numerical feature of type float64 with 3001 unique values
+[04/21/19 21:12:12] INFO	Feature 475: d_mean_teamfight_participation is a numerical feature of type float64 with 3076 unique values
+[04/21/19 21:12:13] INFO	Feature 476: mean_teamfight_participation_ratio is a numerical feature of type float64 with 31686 unique values
+[04/21/19 21:12:13] INFO	Feature 477: r_total_towers_killed is a numerical feature of type int64 with 13 unique values
+[04/21/19 21:12:13] INFO	Feature 478: d_total_towers_killed is a numerical feature of type int64 with 13 unique values
+[04/21/19 21:12:13] INFO	Feature 479: total_towers_killed_ratio is a numerical feature of type float64 with 78 unique values
+[04/21/19 21:12:13] INFO	Feature 480: r_std_towers_killed is a numerical feature of type float64 with 71 unique values
+[04/21/19 21:12:13] INFO	Feature 481: d_std_towers_killed is a numerical feature of type float64 with 80 unique values
+[04/21/19 21:12:13] INFO	Feature 482: std_towers_killed_ratio is a numerical feature of type float64 with 888 unique values
+[04/21/19 21:12:13] INFO	Feature 483: r_mean_towers_killed is a numerical feature of type float64 with 13 unique values
+[04/21/19 21:12:13] INFO	Feature 484: d_mean_towers_killed is a numerical feature of type float64 with 13 unique values
+[04/21/19 21:12:13] INFO	Feature 485: mean_towers_killed_ratio is a numerical feature of type float64 with 81 unique values
+[04/21/19 21:12:13] INFO	Feature 486: r_total_roshans_killed is a numerical feature of type int64 with 6 unique values
+[04/21/19 21:12:13] INFO	Feature 487: d_total_roshans_killed is a numerical feature of type int64 with 6 unique values
+[04/21/19 21:12:13] INFO	Feature 488: total_roshans_killed_ratio is a numerical feature of type float64 with 12 unique values
+[04/21/19 21:12:13] INFO	Feature 489: r_std_roshans_killed is a numerical feature of type float64 with 14 unique values
+[04/21/19 21:12:14] INFO	Feature 490: d_std_roshans_killed is a numerical feature of type float64 with 15 unique values
+[04/21/19 21:12:14] INFO	Feature 491: std_roshans_killed_ratio is a numerical feature of type float64 with 24 unique values
+[04/21/19 21:12:14] INFO	Feature 492: r_mean_roshans_killed is a numerical feature of type float64 with 6 unique values
+[04/21/19 21:12:14] INFO	Feature 493: d_mean_roshans_killed is a numerical feature of type float64 with 6 unique values
+[04/21/19 21:12:14] INFO	Feature 494: mean_roshans_killed_ratio is a numerical feature of type float64 with 12 unique values
+[04/21/19 21:12:14] INFO	Feature 495: r_total_obs_placed is a numerical feature of type int64 with 32 unique values
+[04/21/19 21:12:14] INFO	Feature 496: d_total_obs_placed is a numerical feature of type int64 with 33 unique values
+[04/21/19 21:12:14] INFO	Feature 497: total_obs_placed_ratio is a numerical feature of type float64 with 355 unique values
+[04/21/19 21:12:14] INFO	Feature 498: r_std_obs_placed is a numerical feature of type float64 with 451 unique values
+[04/21/19 21:12:14] INFO	Feature 499: d_std_obs_placed is a numerical feature of type float64 with 456 unique values
+[04/21/19 21:12:14] INFO	Feature 500: std_obs_placed_ratio is a numerical feature of type float64 with 9843 unique values
+[04/21/19 21:12:14] INFO	Feature 501: r_mean_obs_placed is a numerical feature of type float64 with 32 unique values
+[04/21/19 21:12:14] INFO	Feature 502: d_mean_obs_placed is a numerical feature of type float64 with 33 unique values
+[04/21/19 21:12:15] INFO	Feature 503: mean_obs_placed_ratio is a numerical feature of type float64 with 376 unique values
+[04/21/19 21:12:15] INFO	Feature 504: r_total_sen_placed is a numerical feature of type int64 with 64 unique values
+[04/21/19 21:12:15] INFO	Feature 505: d_total_sen_placed is a numerical feature of type int64 with 66 unique values
+[04/21/19 21:12:15] INFO	Feature 506: total_sen_placed_ratio is a numerical feature of type float64 with 779 unique values
+[04/21/19 21:12:15] INFO	Feature 507: r_std_sen_placed is a numerical feature of type float64 with 796 unique values
+[04/21/19 21:12:15] INFO	Feature 508: d_std_sen_placed is a numerical feature of type float64 with 781 unique values
+[04/21/19 21:12:15] INFO	Feature 509: std_sen_placed_ratio is a numerical feature of type float64 with 7095 unique values
+[04/21/19 21:12:15] INFO	Feature 510: r_mean_sen_placed is a numerical feature of type float64 with 64 unique values
+[04/21/19 21:12:15] INFO	Feature 511: d_mean_sen_placed is a numerical feature of type float64 with 66 unique values
+[04/21/19 21:12:15] INFO	Feature 512: mean_sen_placed_ratio is a numerical feature of type float64 with 819 unique values
+[04/21/19 21:12:15] INFO	Feature 513: r_total_ability_level is a numerical feature of type int64 with 102 unique values
+[04/21/19 21:12:15] INFO	Feature 514: d_total_ability_level is a numerical feature of type int64 with 102 unique values
+[04/21/19 21:12:16] INFO	Feature 515: total_ability_level_ratio is a numerical feature of type float64 with 1494 unique values
+[04/21/19 21:12:16] INFO	Feature 516: r_std_ability_level is a numerical feature of type float64 with 315 unique values
+[04/21/19 21:12:16] INFO	Feature 517: d_std_ability_level is a numerical feature of type float64 with 315 unique values
+[04/21/19 21:12:16] INFO	Feature 518: std_ability_level_ratio is a numerical feature of type float64 with 5777 unique values
+[04/21/19 21:12:16] INFO	Feature 519: r_mean_ability_level is a numerical feature of type float64 with 102 unique values
+[04/21/19 21:12:16] INFO	Feature 520: d_mean_ability_level is a numerical feature of type float64 with 102 unique values
+[04/21/19 21:12:16] INFO	Feature 521: mean_ability_level_ratio is a numerical feature of type float64 with 1572 unique values
+[04/21/19 21:12:16] INFO	Feature 522: r_total_max_hero_hit is a numerical feature of type int64 with 3432 unique values
+[04/21/19 21:12:16] INFO	Feature 523: d_total_max_hero_hit is a numerical feature of type int64 with 3450 unique values
+[04/21/19 21:12:17] INFO	Feature 524: total_max_hero_hit_ratio is a numerical feature of type float64 with 45742 unique values
+[04/21/19 21:12:17] INFO	Feature 525: r_std_max_hero_hit is a numerical feature of type float64 with 42371 unique values
+[04/21/19 21:12:17] INFO	Feature 526: d_std_max_hero_hit is a numerical feature of type float64 with 42251 unique values
+[04/21/19 21:12:17] INFO	Feature 527: std_max_hero_hit_ratio is a numerical feature of type float64 with 49406 unique values
+[04/21/19 21:12:17] INFO	Feature 528: r_mean_max_hero_hit is a numerical feature of type float64 with 3432 unique values
+[04/21/19 21:12:17] INFO	Feature 529: d_mean_max_hero_hit is a numerical feature of type float64 with 3450 unique values
+[04/21/19 21:12:17] INFO	Feature 530: mean_max_hero_hit_ratio is a numerical feature of type float64 with 46430 unique values
+[04/21/19 21:12:17] INFO	Feature 531: r_total_purchase_count is a numerical feature of type int64 with 366 unique values
+[04/21/19 21:12:18] INFO	Feature 532: d_total_purchase_count is a numerical feature of type int64 with 364 unique values
+[04/21/19 21:12:18] INFO	Feature 533: total_purchase_count_ratio is a numerical feature of type float64 with 10835 unique values
+[04/21/19 21:12:18] INFO	Feature 534: r_std_purchase_count is a numerical feature of type float64 with 3724 unique values
+[04/21/19 21:12:18] INFO	Feature 535: d_std_purchase_count is a numerical feature of type float64 with 3705 unique values
+[04/21/19 21:12:18] INFO	Feature 536: std_purchase_count_ratio is a numerical feature of type float64 with 38564 unique values
+[04/21/19 21:12:18] INFO	Feature 537: r_mean_purchase_count is a numerical feature of type float64 with 366 unique values
+[04/21/19 21:12:18] INFO	Feature 538: d_mean_purchase_count is a numerical feature of type float64 with 364 unique values
+[04/21/19 21:12:18] INFO	Feature 539: mean_purchase_count_ratio is a numerical feature of type float64 with 11492 unique values
+[04/21/19 21:12:18] INFO	Feature 540: r_total_count_ability_use is a numerical feature of type int64 with 2277 unique values
+[04/21/19 21:12:19] INFO	Feature 541: d_total_count_ability_use is a numerical feature of type int64 with 2340 unique values
+[04/21/19 21:12:19] INFO	Feature 542: total_count_ability_use_ratio is a numerical feature of type float64 with 31466 unique values
+[04/21/19 21:12:19] INFO	Feature 543: r_std_count_ability_use is a numerical feature of type float64 with 22313 unique values
+[04/21/19 21:12:19] INFO	Feature 544: d_std_count_ability_use is a numerical feature of type float64 with 22368 unique values
+[04/21/19 21:12:19] INFO	Feature 545: std_count_ability_use_ratio is a numerical feature of type float64 with 47497 unique values
+[04/21/19 21:12:19] INFO	Feature 546: r_mean_count_ability_use is a numerical feature of type float64 with 2277 unique values
+[04/21/19 21:12:19] INFO	Feature 547: d_mean_count_ability_use is a numerical feature of type float64 with 2340 unique values
+[04/21/19 21:12:19] INFO	Feature 548: mean_count_ability_use_ratio is a numerical feature of type float64 with 32721 unique values
+[04/21/19 21:12:19] INFO	Feature 549: r_total_damage_dealt is a numerical feature of type int64 with 46464 unique values
+[04/21/19 21:12:24] INFO	Feature 550: d_total_damage_dealt is a numerical feature of type int64 with 46444 unique values
+[04/21/19 21:12:28] INFO	Feature 551: total_damage_dealt_ratio is a numerical feature of type float64 with 49462 unique values
+[04/21/19 21:12:28] INFO	Feature 552: r_std_damage_dealt is a numerical feature of type float64 with 49465 unique values
+[04/21/19 21:12:28] INFO	Feature 553: d_std_damage_dealt is a numerical feature of type float64 with 49458 unique values
+[04/21/19 21:12:28] INFO	Feature 554: std_damage_dealt_ratio is a numerical feature of type float64 with 49471 unique values
+[04/21/19 21:12:28] INFO	Feature 555: r_mean_damage_dealt is a numerical feature of type float64 with 46464 unique values
+[04/21/19 21:12:29] INFO	Feature 556: d_mean_damage_dealt is a numerical feature of type float64 with 46444 unique values
+[04/21/19 21:12:29] INFO	Feature 557: mean_damage_dealt_ratio is a numerical feature of type float64 with 49464 unique values
+[04/21/19 21:12:29] INFO	Feature 558: r_total_damage_received is a numerical feature of type int64 with 39813 unique values
+[04/21/19 21:12:32] INFO	Feature 559: d_total_damage_received is a numerical feature of type int64 with 39926 unique values
+[04/21/19 21:12:36] INFO	Feature 560: total_damage_received_ratio is a numerical feature of type float64 with 49397 unique values
+[04/21/19 21:12:36] INFO	Feature 561: r_std_damage_received is a numerical feature of type float64 with 49426 unique values
+[04/21/19 21:12:36] INFO	Feature 562: d_std_damage_received is a numerical feature of type float64 with 49405 unique values
+[04/21/19 21:12:36] INFO	Feature 563: std_damage_received_ratio is a numerical feature of type float64 with 49441 unique values
+[04/21/19 21:12:37] INFO	Feature 564: r_mean_damage_received is a numerical feature of type float64 with 39813 unique values
+[04/21/19 21:12:37] INFO	Feature 565: d_mean_damage_received is a numerical feature of type float64 with 39926 unique values
+[04/21/19 21:12:37] INFO	Feature 566: mean_damage_received_ratio is a numerical feature of type float64 with 49411 unique values
+[04/21/19 21:12:37] INFO	Feature 567: nan_count is a numerical feature of type int64 with 52 unique values
+[04/21/19 21:12:37] INFO	Feature 568: count_0 is a numerical feature of type int64 with 295 unique values
+[04/21/19 21:12:37] INFO	Feature 569: count_1 is a numerical feature of type int64 with 68 unique values
+[04/21/19 21:12:37] INFO	Feature 570: count_2 is a numerical feature of type int64 with 36 unique values
+[04/21/19 21:12:37] INFO	Feature 571: count_3 is a numerical feature of type int64 with 28 unique values
+[04/21/19 21:12:37] INFO	Feature 572: count_4 is a numerical feature of type int64 with 25 unique values
+[04/21/19 21:12:37] INFO	Feature 573: count_5 is a numerical feature of type int64 with 24 unique values
+[04/21/19 21:12:37] INFO	Feature 574: count_6 is a numerical feature of type int64 with 22 unique values
+[04/21/19 21:12:38] INFO	Feature 575: count_7 is a numerical feature of type int64 with 20 unique values
+[04/21/19 21:12:38] INFO	Feature 576: count_8 is a numerical feature of type int64 with 19 unique values
+[04/21/19 21:12:38] INFO	Feature 577: count_9 is a numerical feature of type int64 with 18 unique values
+[04/21/19 21:12:38] INFO	New Feature Count : 577
+[04/21/19 21:12:38] INFO	Scaling Base Features
+[04/21/19 21:12:39] INFO	Creating NumPy Features
+[04/21/19 21:12:39] INFO	NumPy Feature: sum
+[04/21/19 21:12:39] INFO	NumPy Feature: mean
+[04/21/19 21:12:39] INFO	NumPy Feature: standard deviation
+[04/21/19 21:12:39] INFO	NumPy Feature: variance
+[04/21/19 21:12:39] INFO	NumPy Feature Count : 4
+[04/21/19 21:12:39] INFO	New Feature Count : 581
+[04/21/19 21:12:39] INFO	Creating Clustering Features
+[04/21/19 21:12:39] INFO	Cluster Minimum   : 3
+[04/21/19 21:12:39] INFO	Cluster Maximum   : 30
+[04/21/19 21:12:39] INFO	Cluster Increment : 3
+[04/21/19 21:12:39] INFO	k = 3
+[04/21/19 21:12:40] INFO	k = 6
+[04/21/19 21:12:41] INFO	k = 9
+[04/21/19 21:12:42] INFO	k = 12
+[04/21/19 21:12:42] INFO	k = 15
+[04/21/19 21:12:43] INFO	k = 18
+[04/21/19 21:12:44] INFO	k = 21
+[04/21/19 21:12:45] INFO	k = 24
+[04/21/19 21:12:47] INFO	k = 27
+[04/21/19 21:12:48] INFO	k = 30
+[04/21/19 21:12:49] INFO	Clustering Feature Count : 10
+[04/21/19 21:12:49] INFO	New Feature Count : 591
+[04/21/19 21:12:49] INFO	Saving New Features in Model
+[04/21/19 21:12:49] INFO	Creating Interactions
+[04/21/19 21:12:49] INFO	Initial Feature Count  : 591
+[04/21/19 21:12:49] INFO	Skipping Interactions
+[04/21/19 21:12:49] INFO	Saving New Features in Model
+[04/21/19 21:12:49] INFO	Removing Low-Variance Features
+[04/21/19 21:12:49] INFO	Low-Variance Threshold  : 0.10
+[04/21/19 21:12:49] INFO	Original Feature Count  : 591
+[04/21/19 21:12:49] INFO	Reduced Feature Count   : 591
+[04/21/19 21:12:49] INFO	Saving New Features in Model
+[04/21/19 21:12:49] INFO	Skipping Shuffling
+[04/21/19 21:12:49] INFO	Skipping Sampling
+[04/21/19 21:12:49] INFO	Getting All Estimators
+[04/21/19 21:12:49] INFO	Algorithm Configuration
+[04/21/19 21:12:49] INFO	Selecting Models
+[04/21/19 21:12:49] INFO	Algorithm: LGBM
+[04/21/19 21:12:49] INFO	Fitting Initial Model
+[04/21/19 21:12:57] INFO	Cross-Validation
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done   3 out of   3 | elapsed:   16.1s finished
+[04/21/19 21:13:14] INFO	Cross-Validation Scores: [0.82252965 0.82403414 0.82174687]
+[04/21/19 21:13:14] INFO	Randomized Grid Search
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[LightGBM] [Warning] Accuracy may be bad since you didn't set num_leaves and 2^max_depth > num_leaves
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed: 10.7min
+[Parallel(n_jobs=3)]: Done 150 out of 150 | elapsed: 47.1min finished
+[04/21/19 22:00:52] INFO	Grid Search took 2858.72 seconds for 50 candidate parameter settings.
+[04/21/19 22:00:52] INFO	Model with rank: 1
+[04/21/19 22:00:52] INFO	Mean validation score: 0.823 (std: 0.001)
+[04/21/19 22:00:52] INFO	Parameters: {'est__subsample_for_bin': 100000, 'est__subsample': 1.0, 'est__reg_lambda': 0.0, 'est__reg_alpha': 0.0, 'est__num_leaves': 15, 'est__n_estimators': 1000, 'est__min_split_gain': 10.0, 'est__min_child_weight': 0.001, 'est__min_child_samples': 10, 'est__max_depth': 10, 'est__learning_rate': 0.01, 'est__boosting_type': 'gbdt'}
+[04/21/19 22:00:52] INFO	Model with rank: 2
+[04/21/19 22:00:52] INFO	Mean validation score: 0.823 (std: 0.001)
+[04/21/19 22:00:52] INFO	Parameters: {'est__subsample_for_bin': 1000, 'est__subsample': 1.0, 'est__reg_lambda': 100.0, 'est__reg_alpha': 0.1, 'est__num_leaves': 31, 'est__n_estimators': 2200, 'est__min_split_gain': 10.0, 'est__min_child_weight': 0.001, 'est__min_child_samples': 10, 'est__max_depth': 10, 'est__learning_rate': 1.0, 'est__boosting_type': 'dart'}
+[04/21/19 22:00:52] INFO	Model with rank: 3
+[04/21/19 22:00:52] INFO	Mean validation score: 0.822 (std: 0.001)
+[04/21/19 22:00:52] INFO	Parameters: {'est__subsample_for_bin': 10000, 'est__subsample': 0.33, 'est__reg_lambda': 0.1, 'est__reg_alpha': 0.0, 'est__num_leaves': 31, 'est__n_estimators': 470, 'est__min_split_gain': 10.0, 'est__min_child_weight': 0.0001, 'est__min_child_samples': 1000, 'est__max_depth': 10, 'est__learning_rate': 0.01, 'est__boosting_type': 'goss'}
+[04/21/19 22:00:52] INFO	Algorithm: LGBM, Best Score: 0.8232, Best Parameters: {'est__subsample_for_bin': 100000, 'est__subsample': 1.0, 'est__reg_lambda': 0.0, 'est__reg_alpha': 0.0, 'est__num_leaves': 15, 'est__n_estimators': 1000, 'est__min_split_gain': 10.0, 'est__min_child_weight': 0.001, 'est__min_child_samples': 10, 'est__max_depth': 10, 'est__learning_rate': 0.01, 'est__boosting_type': 'gbdt'}
+[04/21/19 22:00:52] INFO	Final Model Predictions for LGBM
+[04/21/19 22:00:52] INFO	Skipping Calibration
+[04/21/19 22:00:52] INFO	Making Predictions
+[04/21/19 22:00:54] INFO	Predictions Complete
+[04/21/19 22:00:54] INFO	================================================================================
+[04/21/19 22:00:54] INFO	Metrics for: Partition.train
+[04/21/19 22:00:54] INFO	--------------------------------------------------------------------------------
+[04/21/19 22:00:54] INFO	Algorithm: LGBM
+[04/21/19 22:00:54] INFO	accuracy: 0.7455324511657215
+[04/21/19 22:00:54] INFO	average_precision: 0.8532169867699566
+[04/21/19 22:00:54] INFO	balanced_accuracy: 0.7438464425742384
+[04/21/19 22:00:54] INFO	brier_score_loss: 0.16397208669669844
+[04/21/19 22:00:54] INFO	cohen_kappa: 0.4887217312663129
+[04/21/19 22:00:54] INFO	confusion_matrix: [[13383  5466]
+ [ 4630 16196]]
+[04/21/19 22:00:54] INFO	f1: 0.7623799661080775
+[04/21/19 22:00:54] INFO	neg_log_loss: 0.4892375461439726
+[04/21/19 22:00:54] INFO	precision: 0.7476687286492475
+[04/21/19 22:00:54] INFO	recall: 0.7776817439738788
+[04/21/19 22:00:54] INFO	roc_auc: 0.837640005417511
+[04/21/19 22:00:54] INFO	================================================================================
+[04/21/19 22:00:54] INFO	Metrics for: Partition.test
+[04/21/19 22:00:54] INFO	No labels for generating Partition.test metrics
+[04/21/19 22:00:54] INFO	================================================================================
+[04/21/19 22:00:54] INFO	Selecting Best Model
+[04/21/19 22:00:54] INFO	Scoring for: Partition.train
+[04/21/19 22:00:54] INFO	Best Model Selection Start: 2019-04-21 22:00:54.690749
+[04/21/19 22:00:54] INFO	Scoring LGBM Model
+[04/21/19 22:00:54] INFO	Best Model is LGBM with a roc_auc score of 0.8376
+[04/21/19 22:00:54] INFO	Best Model Selection Complete: 0:00:00.001000
+[04/21/19 22:00:54] INFO	================================================================================
+[04/21/19 22:00:54] INFO	Generating Plots for partition: train
+[04/21/19 22:00:54] INFO	Generating Calibration Plot
+[04/21/19 22:00:54] INFO	Calibration for Algorithm: LGBM
+[04/21/19 22:00:54] INFO	Writing plot to ./plots/calibration_train.png
+c:\anaconda3\lib\site-packages\matplotlib\tight_layout.py:231: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+[04/21/19 22:00:55] INFO	Generating Confusion Matrices
+[04/21/19 22:00:55] INFO	Confusion Matrix for Algorithm: LGBM
+[04/21/19 22:00:55] INFO	Confusion Matrix:
+[04/21/19 22:00:55] INFO	[[13383  5466]
+ [ 4630 16196]]
+c:\anaconda3\lib\site-packages\matplotlib\tight_layout.py:231: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+[04/21/19 22:00:55] INFO	Writing plot to ./plots/confusion_train_LGBM.png
+[04/21/19 22:00:55] INFO	Generating ROC Curves
+[04/21/19 22:00:55] INFO	ROC Curve for Algorithm: LGBM
+[04/21/19 22:00:55] INFO	Writing plot to ./plots/roc_curve_train.png
+c:\anaconda3\lib\site-packages\matplotlib\tight_layout.py:231: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+[04/21/19 22:00:55] INFO	Generating Learning Curves
+[04/21/19 22:00:55] INFO	Algorithm Configuration
+[04/21/19 22:00:55] INFO	Learning Curve for Algorithm: LGBM
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done   9 out of   9 | elapsed:   30.1s finished
+[04/21/19 22:01:25] INFO	Writing plot to ./plots/learning_curve_train_LGBM.png
+c:\anaconda3\lib\site-packages\matplotlib\tight_layout.py:231: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+[04/21/19 22:01:25] INFO	Generating Feature Importance Plots
+[04/21/19 22:01:25] INFO	Feature Importances for Algorithm: LGBM
+[04/21/19 22:01:25] INFO	Feature Ranking:
+[04/21/19 22:01:25] INFO	1. Feature 343 (120.000000)
+[04/21/19 22:01:25] INFO	2. Feature 361 (72.000000)
+[04/21/19 22:01:25] INFO	3. Feature 355 (58.000000)
+[04/21/19 22:01:25] INFO	4. Feature 370 (53.000000)
+[04/21/19 22:01:25] INFO	5. Feature 532 (28.000000)
+[04/21/19 22:01:25] INFO	6. Feature 397 (27.000000)
+[04/21/19 22:01:25] INFO	7. Feature 413 (26.000000)
+[04/21/19 22:01:25] INFO	8. Feature 391 (25.000000)
+[04/21/19 22:01:25] INFO	9. Feature 404 (24.000000)
+[04/21/19 22:01:25] INFO	10. Feature 476 (21.000000)
+[04/21/19 22:01:25] INFO	Writing plot to ./plots/feature_importance_train_LGBM.png
+c:\anaconda3\lib\site-packages\matplotlib\tight_layout.py:231: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+[04/21/19 22:01:26] INFO	================================================================================
+[04/21/19 22:01:26] INFO	Saving Model Predictor
+[04/21/19 22:01:26] INFO	Writing model predictor to ./model/model_20190421.pkl
+[04/21/19 22:01:26] INFO	Saving Feature Map
+[04/21/19 22:01:26] INFO	Writing feature map to ./model/feature_map_20190421.pkl
+[04/21/19 22:01:26] INFO	Loading data from ./input/test.csv
+[04/21/19 22:01:27] INFO	Saving Predictions
+[04/21/19 22:01:27] INFO	Writing data frame to ./output/predictions_20190421.csv
+[04/21/19 22:01:27] INFO	Saving Probabilities
+[04/21/19 22:01:27] INFO	Writing data frame to ./output/probabilities_20190421.csv
+[04/21/19 22:01:27] INFO	Saving Ranked Predictions
+[04/21/19 22:01:27] INFO	Writing data frame to ./output/rankings_20190421.csv
+[04/21/19 22:01:34] INFO	Saving Submission to ./output/submission_20190421.csv
+[04/21/19 22:01:34] INFO	********************************************************************************
+[04/21/19 22:01:34] INFO	AlphaPy End
+[04/21/19 22:01:34] INFO	********************************************************************************
+None
+Fitting 3 folds for each of 50 candidates, totalling 150 fits
+[learning_curve] Training set sizes: [ 2645 14547 26450]
